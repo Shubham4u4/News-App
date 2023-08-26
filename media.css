@@ -1,0 +1,68 @@
+@media screen and (max-width: 991px) {
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+        
+    }
+
+    .nav-links{
+        position: absolute;
+        background-color: aliceblue;
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.2s ease-in-out;
+
+        
+    }
+    .nav-links.active{
+        left: 0;
+    }
+    .nav-links ul {
+        flex-direction: column;
+    }
+    .main-nav{
+        overflow: initial;
+    }
+    .card{
+        width: calc(50% - 10px);
+    }
+    main{
+        margin-top: 60px;
+    }
+    
+}
+ 
+@media screen and (max-width: 767px) {
+    
+    .card{
+        width: calc(50% - 10px);
+    }
+    main{
+        margin-top: 50px;
+    }
+    
+}
+@media screen and (max-width: 479px){
+  .card {
+    width: 100%;
+    column-gap: 20px;
+  }
+  p{
+    font-size: 1.2rem;
+  }
+  .news-input {
+    width: 100px;
+    height: 100%;
+    padding: 4px 18px;
+}
+.search-button{
+    padding: 4px 18px;
+    width: 100px;
+}
+main{
+    margin-top: 50px;
+}
+
+}
